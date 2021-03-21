@@ -1,0 +1,19 @@
+.button {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $main_color_2;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: $main_color_1;
+    cursor: pointer;
+    &_main {
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
