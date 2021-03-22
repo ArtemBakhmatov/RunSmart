@@ -37,3 +37,40 @@
         align-items:flex-end;
     }
 }
+
+@media (max-width: 991px) {
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            span {
+                margin-top: 6px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }  
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        &__logo {
+            width: 225px;
+        }
+        &__official {
+            margin-top: 25px;
+        }
+        &__contacts {
+            margin-top: 25px;
+            align-items: center;
+        }
+        &__phone {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+}

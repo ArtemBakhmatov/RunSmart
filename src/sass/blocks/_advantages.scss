@@ -1,0 +1,103 @@
+.advantages {
+    min-height: 470px;
+    padding: 70px 0 78px 0;
+    background-color: #f6f6f6;
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            display: block;
+        }
+        &_width_1 {
+            width: 239px;
+        }
+        &_width_2 {
+            width: 243px;
+            margin-top: -15px;
+        }
+        &_width_3 {
+            width: 242px;
+            margin-top: -15px;
+        }
+    }
+    &__subtitle {
+        margin-top: 38px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: $main_color_3;
+    }
+    &__text {
+        margin-top: 26px;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        line-height: normal;
+        text-align: center;
+        color: $main_color_3;
+        span {
+            color: $main_color_1;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .advantages {
+        padding: 60px 5px 68px 5px;
+        &__block {
+            width: 220px;
+            &_width_2 {
+                margin-top: 0;
+            }
+            &_width_3 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 60px 5px 28px 5px;
+        &__wrapper {
+            display: flex; 
+            flex-direction: column;
+        }
+        &__block {
+            margin-bottom: 40px;
+            &_width_1 {
+                width: 239px;
+            }
+            &_width_2 {
+                width: 243px;
+            }
+            &_width_3 {
+                width: 242px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        padding: 45px 5px 0px 5px;
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__block {
+            img {
+                width: 24%;
+            }
+        }
+    }
+}
