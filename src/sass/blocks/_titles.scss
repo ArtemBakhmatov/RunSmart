@@ -11,6 +11,9 @@
         text-align: left;
         color: $main_color_2;
     }
+    &_clients {
+        margin-bottom: 70px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -31,6 +34,9 @@
         font-size: 24px;
         &_consultation {
             font-size: 18px;
+        }
+        &_clients {
+            margin-bottom: 50px;
         }
     }
 }
