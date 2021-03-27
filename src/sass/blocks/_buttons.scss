@@ -63,5 +63,10 @@
             width: 230px;
             height: 35px;
         }
+        &_submit{
+            &_mobile {
+                height: 45px;
+            }
+        }
     }
 }
