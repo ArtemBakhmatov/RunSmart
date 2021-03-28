@@ -11,6 +11,36 @@
   margin: 0 auto;
 }
 
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .promo {
   min-height: 650px;
   padding: 21px 0 93px 0;
@@ -400,6 +430,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.advantages__block_animate {
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.advantages__block_animate:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .advantages__block img {
@@ -1161,5 +1207,15 @@
     padding: 38px 20px 40px 20px;
     width: 235px;
   }
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px img;
+  height-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="promo">
+    <div class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -73,7 +74,7 @@
                 </div>
 
                 <div class="advantages__block advantages__block_width_2">
-                    <img src="icons/advantages/heart.png" alt="heart">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__block_animate">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__text">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -390,7 +391,7 @@
     <section class="clients">
         <div class="container">
             <div class="title title_clients">отзывы клиентов</div>
-            <div class="clients__wrapper">
+            <div class="clients__wrapper animate__animated wow animate__fadeInUp ">
                 <div class="clients__img"><img src="icons/reviews/1.png" alt="1"></div>
                 <div class="clients__feedback">
                     <div class="clients__name">Ирина Иванченко</div>
@@ -406,7 +407,7 @@
                 </div>
             </div>
             <div class="clients__trait"></div>
-            <div class="clients__wrapper">
+            <div class="clients__wrapper animate__animated animate__fadeInUp">
                 <div class="clients__img"><img src="icons/reviews/2.png" alt="2"></div>
                 <div class="clients__feedback">
                     <div class="clients__name">Иван Сёмочкин</div>
@@ -419,7 +420,7 @@
                 </div>
             </div>
             <div class="clients__trait"></div>
-            <div class="clients__wrapper">
+            <div class="clients__wrapper animate__animated animate__fadeInUp">
                 <div class="clients__img"><img src="icons/reviews/3.png" alt="3"></div>
                 <div class="clients__feedback">
                     <div class="clients__name">Юлия Дашкина</div>
@@ -489,10 +490,13 @@
                 в ближайшее время!</div>
         </div>
     </div>
-    
+    <a href="#up" class="pageup"><img src="icons/chevron-circle-up-solid.svg" alt="arrow_top">
+    </a>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/WOW.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
